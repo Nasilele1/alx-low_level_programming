@@ -1,11 +1,10 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-/* more headeres goes there */
-
+#include <time.h>
+/* more headers goes there */
+#include <stdlib.h>
 /* betty style doc for function main goes there */
 /**
- *main - Entry point
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
