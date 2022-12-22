@@ -6,7 +6,7 @@
  * @src: copy from
  * Return: two concat strings
  */
-char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src);
 {
 	int len = 0, i;
 
