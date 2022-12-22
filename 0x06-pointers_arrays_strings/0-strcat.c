@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strat - a function that concatenates two strings
- * @dest: copy to
- * @src: copy from
- * Return: two concat strings
+ * _strcat - this is a strcat function
+ * @dest: first parameter
+ * @src: second parameter
+ * Return: a string concatenate
  */
 char *_strcat(char *dest, char *src);
 {
@@ -13,7 +13,7 @@ char *_strcat(char *dest, char *src);
 	while (dest[len])
 		len++;
 
-	for (i = 0; src[i] != 0; i++)
+	for (i = 0; src[i] != '\0'; i++)
 	{
 		dest[len] = src[i];
 		len += 1;
