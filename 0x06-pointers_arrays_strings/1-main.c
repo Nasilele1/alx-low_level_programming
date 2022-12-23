@@ -6,21 +6,22 @@
  *
  * Return: Always 0.
  */
+char *_strncat(char *dest, char *src)
+{
+	int len = 0, i;
+
+	while (dest[len])
+		len++;
+
+	for (i = 0; src[i] != '0'; i++)
+	{
+		dest[len] = src[i];
+		len += 1;
+	}
+	dest[len] = '\0';
+	return (dest);
+}
 int main(void)
 {
-	char s1[98] = "Hello ";
-	char s2[] = "World!\n";
-	char *ptr;
-
-	printf("%s\n", s1);
-	printf("%s", s2);
-	ptr = _strcat(s1, s2, 1);
-	printf("%s\n", s1);
-	printf("%s", s2);
-	printf("%s\n", ptr);
-	ptr = _strcat(s1, s2, 1024);
-	printf("%s", s1);
-	printf("%s", s2);
-	printf("%s", ptr);
-	return (0);
+	_strcat("Hello", "World");
 }
