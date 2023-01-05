@@ -12,7 +12,7 @@ int palind2(char *a, int l)
 {
 	if (*a == 0)
 	{
-		return (l - 1);
+		return (1);
 	}
 	return (palind2(a + 1, l + 1));
 }
@@ -28,11 +28,11 @@ int palind3(char *a, int l)
 {
 	if (*a != *(a + 1))
 	{
-		return (0);
+		return (1);
 	}
 	else if (*a == 0)
 	{
-		return (1);
+		return (0);
 	}
 	return (palind3(a + 1, l - 2));
 }
