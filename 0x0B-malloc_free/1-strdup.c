@@ -13,9 +13,8 @@ int _strlen(char *s)
 
 	for (a = 0; s[a] != '\0'; a++)
 	{
-
+		return (a);
 	}
-	return (a);
 }
 /**
  * *_strdup - function to return pointer to string
