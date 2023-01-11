@@ -3,7 +3,6 @@
 #include "main.h"
 /**
  * _strlen - return length of a string
- *
  * @s: char type
  * Return: length of a string
  */
@@ -13,14 +12,13 @@ int _strlen(char *s)
 
 	for (a = 0; s[a] != '\0'; a++)
 	{
-		
+
 	}
 	return (a);
 }
 /**
  * *_strdup - function to return pointer to string
- * @str: pointer to string array input
- * @s: string
+ * @str: pointer: pointer to a string
  * Return: pointer to string created
  */
 char *_strdup(char *str)
@@ -34,7 +32,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	size = _strlen(str) + 1;
-	ptr = malloc(size * sizeof(char));
+	ptr = malloc(size + sizeof(char));
 
 	x = 0;
 	while (x < size)
