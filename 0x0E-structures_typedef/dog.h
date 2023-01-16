@@ -9,7 +9,7 @@
  */
 
 /**
- * struct dog - struct dog.
+ * struct dog - Description of dog.
  * @name: The name of the dog.
  * @age: The age of the dog.
  * @owner: The owner of the dog.
