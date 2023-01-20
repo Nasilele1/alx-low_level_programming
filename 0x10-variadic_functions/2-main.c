@@ -1,12 +1,12 @@
 #include "variadic_functions.h"
 
 /**
- * main -check the code
+ * msin - check the code
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	print_numbers(", ", 4, 98, -1024, 402);
+	print_strings(", ", 2, "Jay", "Django");
 	return (0);
 }
