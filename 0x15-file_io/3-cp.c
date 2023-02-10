@@ -1,4 +1,4 @@
-#imclude "main.h"
+#include "main.h"
 /**
  * error_file - checks if files can be opened.
  * @file_from: file_from
@@ -27,7 +27,7 @@ void error_file(int file_from, int file_to, char *argv[])
  * @argv : arguments vector
  * Return: Always 0.
  */
-int main(argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int file_from, file_to, err_close;
 	ssize_t nchars, nwr;
