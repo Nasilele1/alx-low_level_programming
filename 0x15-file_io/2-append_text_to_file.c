@@ -1,4 +1,4 @@
-#imclude "main.h"
+#include "main.h"
 /**
  * append_text_to_file - This function adds text at EOF
  * @filename: name of the file to append data to.
